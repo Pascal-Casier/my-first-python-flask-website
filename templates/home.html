@@ -37,7 +37,11 @@
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ullam, doloremque ex dicta odit facere laborum quidem esse nisi adipisci ipsam? Voluptatum ducimus, quaerat repellendus labore quas incidunt maiores ipsum!
     </p>
     <h2>Open positions</h2>
-    <p>TODO show the jobs</p>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html'%}
+      {% endfor %}
+    </div>
     <button class="btn btn-primary btn-lg">Contact us</button>
   </div>
 </body>
